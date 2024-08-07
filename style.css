@@ -23,11 +23,35 @@ body {
 }
 
 .logo {
-    width: 35%;
+    width: 30%;
     background-image: url(./imgs/bg.avif);
     background-size: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .odin-logo {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo .odin-logo img {
+    width: 4rem;
+}
+
+.logo .odin-logo p {
+    width: 4rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
 }
 
 .content {
-    width: 65%;
+    width: 70%;
 }
