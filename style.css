@@ -25,8 +25,7 @@ body {
 .logo {
     width: 30%;
     background-image: url(./imgs/bg.avif);
-    background-size: 100%;
-    
+    background-repeat: round;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,4 +53,70 @@ body {
 
 .content {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content .upper-section {
+    background-color: #EEE;
+    padding: 15px;
+    height: 25%;
+}
+
+.content .upper-section{
+    font-weight: bold;
+}
+
+.content .form-section {
+    padding: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+.content .form-section p {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.content .form-section form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.content .form-section .input-group {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content .form-section .input-group label {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.content .form-section .input-group input {
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    width: 60%;
+    height: 30px;
+    box-shadow: 3px 2px 2px rgb(0, 0, 0, 0.5);
+}
+
+.content .form-section .input-group input:focus {
+    border: 1px solid rgb(0, 179, 255);
+    outline: none;
+}
+
+.content .form-section .input-group #password:invalid,
+.content .form-section .input-group #confirm-password:invalid {
+    border: 1px solid red;
+}
+
+.content .submit-section {
+    background-color: #EEE;
+    padding: 15px;
+    height: 25%;
 }
